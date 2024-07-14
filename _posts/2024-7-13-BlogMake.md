@@ -16,3 +16,19 @@ Github Pages是Github推出的一个功能，它可以使你的仓库拥有一�
 ### 配置仓库
 1. 进入刚创建的仓库的页面，点击`Settings`>`Pages`，在`Source`下选择`Github Actions`，这时，Github将会为你自动构建仓库。
 2. 修改`_config.yml`中的`url`为你的仓库名，`avatar`为你的头像的地址，`timezone`为`Asia/Shanghai`，`lang`为`zh-CN`。
+## 编写文章
+Jekyll使用Markdown格式来存储文章，因此你需要[了解Markdown](https://markdown.com.cn)。
+### 格式要求
+- 每一篇文章都要以`YYYY-MM-DD-TITLE.md`的格式存储在`_posts`文件夹里。
+- 每一篇文章的开头都必须有一个yml文件头，它长这样：
+``````
+---
+title: 你的文章标题
+date: 写文章的日期
+categories: [分类1，分类2...]
+tags: [标签1，标签2...]
+---
+``````
+这代表了这篇文章的所有基本信息。
+
+至此，你已经完成创建了利用Chirpy主题的Jekyll博客的搭建。
